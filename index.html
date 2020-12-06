@@ -26,7 +26,7 @@ p {
 		
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 6, 2020 12:00:00").getTime();
+var countDownDate = new Date("Dec 23, 2020 19:15:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -44,13 +44,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="countdown"
-  document.getElementById("countdown").innerHTML = hours + "h "
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML = "it's time.";
   }
 }, 1000);
 </script>
